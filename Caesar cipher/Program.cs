@@ -20,6 +20,10 @@ namespace Caesar_cipher
                         {
                             Console.WriteLine(Cipher.Encypt(str, shiftInt));
                         }
+                        else
+                        {
+                            continue;
+                        }
                     }
                     else
                     {
@@ -27,8 +31,6 @@ namespace Caesar_cipher
                     }
 
                 }
-                if (!string.IsNullOrWhiteSpace(str))
-                    Console.WriteLine();
             }
 
         }
