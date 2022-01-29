@@ -163,7 +163,7 @@ namespace Caesar_cipher
                         {
                             if (str[i] == alphabetru[j])
                             {
-                                str2 += alphabetru[((alphabetru.Length + shift + j) % alphabetru.Length)];
+                                str2 += alphabetru[(Math.Abs((alphabetru.Length + shift + j)) % alphabetru.Length)];
                                 break;
                             }
                         }
@@ -174,7 +174,7 @@ namespace Caesar_cipher
                         {
                             if (str[i] == alphabetRU[j])
                             {
-                                str2 += alphabetRU[((alphabetRU.Length + shift + j) % alphabetRU.Length)];
+                                str2 += alphabetRU[(Math.Abs((alphabetRU.Length + shift + j)) % alphabetRU.Length)];
                                 break;
                             }
                         }
@@ -192,7 +192,7 @@ namespace Caesar_cipher
                         {
                             if (str[i] == alphabeten[j])
                             {
-                                str2 += alphabeten[((alphabeten.Length + shift + j) % alphabeten.Length)];
+                                str2 += alphabeten[(Math.Abs((alphabeten.Length + shift + j)) % alphabeten.Length)];
                                 break;
                             }
                         }
@@ -203,7 +203,7 @@ namespace Caesar_cipher
                         {
                             if (str[i] == alphabetEN[j])
                             {
-                                str2 += alphabetEN[((alphabetEN.Length + shift + j) % alphabetEN.Length)];
+                                str2 += alphabetEN[(Math.Abs((alphabetEN.Length + shift + j)) % alphabetEN.Length)];
                                 break;
                             }
                         }
