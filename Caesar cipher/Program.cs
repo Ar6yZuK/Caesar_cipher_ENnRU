@@ -126,7 +126,7 @@ namespace Caesar_cipher
         /// <param name="str"></param>
         /// <param name="Index"></param>
         /// <returns></returns>
-        static public bool isLower(string str, int Index)
+        static public bool IsLower(string str, int Index)
         {
             if (IsRussian(str, Index))
             {
@@ -157,7 +157,7 @@ namespace Caesar_cipher
             {
                 if (IsRussian(str, i))
                 {
-                    if (isLower(str, i))
+                    if (IsLower(str, i))
                     {
                         for (int j = 0; j < alphabetru.Length && str2.Length <= str.Length; j++)
                         {
@@ -186,7 +186,7 @@ namespace Caesar_cipher
                 }
                 else if (IsEnglish(str, i))
                 {
-                    if (isLower(str, i))
+                    if (IsLower(str, i))
                     {
                         for (int j = 0; j < alphabeten.Length && str2.Length <= str.Length; j++)
                         {
